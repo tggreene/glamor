@@ -39,6 +39,7 @@
     "test:server": "cross-env NODE_ENV=test babel-node tests/server.js --presets env,stage-0,react",
     "test:watch": "npm test -- --no-single-run",
     "coverage": "rm -rf tests/coverage && COVERAGE=1 npm test && open tests/coverage/*/index.html",
+    "prepare": "npm run build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
